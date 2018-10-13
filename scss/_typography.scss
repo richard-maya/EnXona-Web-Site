@@ -1,0 +1,61 @@
+/* Typography
+*
+-----------------------*/
+@font-face {
+    font-family: "Futura PT Bold";
+    src: url('../assets/fonts/Futura.ttc');
+}
+
+$modularscale: (
+  base: 1rem,
+  ratio: $minor-third
+);
+$fontType: p, h6, h5, h4, h3, h2, h1;
+@for $i from 1 through 7{
+    #{ nth($fontType, $i) }{
+        @if $i > 1 {
+            font-family: "Futura PT Bold";
+            font-weight: 600;
+            font-size: ms($i - 1);
+            line-height: ms($i+2);
+            letter-spacing: 1px;
+        } @else {
+            font-family: "Futura PT Bold";
+            font-size: ms($i);
+            font-weight: 300;
+            line-height: ms($i+2);
+        }
+    }
+}
+a:not(.carousel-control-next),
+a:not(.carousel-control-prev){
+    font-family: "Futura PT Bold";
+}
+label,input,button{
+    font-family: "Futura PT Bold";
+}
+label{
+    color: $enxona-blue;
+}
+.text-blue {
+    color: $enxona-blue;
+}
+
+.text-aqua {
+    color: $enxona-aqua;
+}
+
+.text-green {
+    color: $enxona-green;
+}
+
+.text-pink {
+    color: $enxona-pink;
+}
+
+.text-orange {
+    color: $enxona-orange;
+}
+.text-white{
+    color: white;
+}

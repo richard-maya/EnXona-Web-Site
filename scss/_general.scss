@@ -1,0 +1,109 @@
+/* General
+*
+-----------------------*/
+.navbar{
+    position: fixed;
+    top: -70px;
+    width: 100%;
+    z-index: 5;
+    @include transition(0.3s);
+    background: $enxona-blue !important;
+    p{
+        margin-bottom: 0px;
+        color: white;
+    }
+    .navbar-toggler{
+        border-color: white;
+    }
+}
+.navbar-down{
+    top: 0px !important;
+}
+footer{
+    background: $enxona-blue;
+    color: white;
+    max-width: 100vw;
+    overflow-x: hidden;
+    p{
+		color: white;
+        font-size: ms(-1);
+		margin-bottom: 0px;
+    }
+	a{
+		color: white;
+		&:hover{
+			color: $enxona-green;
+		}
+	}
+}
+div[itemscope]{
+    display: none;
+}
+.hero{
+	height: 100vh;
+	width: 100%;
+}
+.arrow-row {
+    position: absolute;
+    bottom: ms(5);
+    left: 50%;
+
+    @include media-breakpoint-up(md) {
+        bottom: ms(10);
+    }
+
+    i {
+        color: white;
+    }
+}
+.black-overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+.category-square{
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+    border-radius: 20%;
+
+    .content{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0px;
+        top: 0px;
+
+        h6{
+            letter-spacing: 0px;
+        }
+    }
+}
+.category-square-green {
+    background: #e2e2e2;
+    background: linear-gradient(45deg, #e2e2e2 0%, #e2e2e2 50%, #2bd8a3 51%, #2bd8a3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e2e2e2', endColorstr='#2bd8a3', GradientType=1);
+}
+.category-square-aqua{
+    background: #e2e2e2;
+    background: linear-gradient(45deg, #e2e2e2 0%, #e2e2e2 50%, #15b2d0 51%, #15b2d0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e2e2e2', endColorstr='#15b2d0', GradientType=1);
+}
+.category-square-blue{
+    background: #e2e2e2;
+    background: linear-gradient(45deg, #e2e2e2 0%, #e2e2e2 50%, #0098ff 51%, #0098ff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e2e2e2', endColorstr='#0098ff', GradientType=1);
+}
+.category-square-orange{
+    background: #e2e2e2;
+    background: linear-gradient(45deg, #e2e2e2 0%, #e2e2e2 50%, #f1ad5c 51%, #f1ad5c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e2e2e2', endColorstr='#f1ad5c', GradientType=1);
+}
+.category-square-pink{
+    background: #e2e2e2;
+    background: linear-gradient(45deg, #e2e2e2 0%, #e2e2e2 50%, #f26464 51%, #f26464 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e2e2e2', endColorstr='#f26464', GradientType=1);
+}

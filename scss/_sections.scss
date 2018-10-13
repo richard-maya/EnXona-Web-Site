@@ -1,0 +1,43 @@
+/* Sections
+*
+-----------------------*/
+section.intro{
+	background: #2bd8a3;
+	background: linear-gradient(135deg, #2bd8a3 0%,#0098ff 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2bd8a3', endColorstr='#0098ff',GradientType=1 );
+	p{
+		font-size: ms(2);
+	}
+	a{
+		text-decoration: none;
+	}
+	button{
+		font-size: ms(2);
+	}
+}
+
+section.download{
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	background: transparent;
+	color: white;
+
+	@include media-breakpoint-up(md) {
+		height: 50vh;
+	}
+
+	p{
+		font-size: ms(2);
+		line-height: ms(4);
+	}
+}
+
+section.categories{
+	h6{
+		font-size: ms(1);
+		line-height: ms(2);
+		font-weight: 400;
+		margin-bottom: 0px;
+	}
+}

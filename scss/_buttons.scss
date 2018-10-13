@@ -1,0 +1,44 @@
+/* Buttons
+*
+-----------------------*/
+.btn-xona{
+    @extend .btn-primary;
+    background-color: $enxona-blue;
+    border-color: $enxona-blue;
+    border-radius: 0px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    &:hover, &:focus, &.focus, &:active, &.active{
+        background-color: darken($enxona-blue, 5%);
+        border-color: darken($enxona-blue, 5%);
+    }
+}
+.btn-outline-white{
+    @extend .btn-outline-primary;
+    border-color: white;
+    color: white;
+    &:hover, &:focus, &.focus, &:active, &.active{
+        background-color: white;
+        color: $enxona-blue;
+        border-color: white;
+    }
+}
+.btn-outline-green{
+    @extend .btn-outline-primary;
+    border-color: $enxona-green;
+    color: $enxona-green;
+    &:hover, &:focus, &.focus, &:active, &.active{
+        background-color: $enxona-green;
+        color: white;
+        border-color: $enxona-green;
+    }
+}
+.btn{
+    h4{
+        color: white;
+        margin-bottom: 0px;
+    }
+}
+.btn-circle{
+    border-radius: 100%;
+}
